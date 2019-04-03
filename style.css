@@ -1,0 +1,277 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700');
+
+/* CSS RESET */
+
+body, p, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* CSS GRID */
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.container::after, .container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+    float: left;
+    display: block;
+    min-height: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.grid-1 {
+    width: calc(8.333% - 30px);
+}
+
+.grid-2 {
+    width: calc(16.666% - 30px);
+}
+
+.grid-3 {
+    width: calc(25% - 30px);
+}
+
+.grid-4 {
+    width: calc(33.333% - 30px);
+}
+
+.grid-5 {
+    width: calc(41.666% - 30px);
+}
+
+.grid-6 {
+    width: calc(50% - 30px);
+}
+
+.grid-7 {
+    width: calc(58.333% - 30px);
+}
+
+.grid-8 {
+    width: calc(66.666% - 30px);
+}
+
+.grid-9 {
+    width: calc(75% - 30px);
+}
+
+.grid-10 {
+    width: calc(83.333% - 30px);
+}
+
+.grid-11 {
+    width: calc(91.666% - 30px);
+}
+
+.grid-12 {
+    width: calc(100% - 30px);
+}
+
+@media (max-width: 638px) {
+    .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* STYLE */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: #000;
+    background-image: url(img/giammarco-boscaro-380907-unsplash.jpg);
+    color: #fff;
+    height: 600px;
+    padding-top: 125px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 4em;
+}
+
+.global-content {
+    position: relative;
+}
+
+.container-content {
+    margin: 0 auto;
+    max-width: 970px;
+    position: relative;
+}
+
+.content {
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,.15);
+    position: absolute;
+    top: -250px;
+}
+
+.podcast-content {
+    margin-bottom: 60px;
+}
+
+.podcast-content h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.icon {
+    color: #ff4800;
+    margin-right: 15px;
+}
+
+.text-content {
+    padding: 0 100px;
+}
+
+.text-content h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.text-content h2::after {
+    background: #ff4800;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    margin-top: 8px;
+}
+
+.text-content p {
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
+.img-content {
+    margin: 60px auto;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9*/
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+    margin-bottom: 100px;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mat-complementar::after, .mat-complementar::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.mat-complementar {
+    background: #ff4800;
+    padding: 60px 100px;
+    margin-top: 60px;
+}
+
+.mat-complementar h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.mat-complementar h2::after {
+    background: #fff;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    margin-top: 8px;
+}
+
+.item {
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.item-content {
+    padding: 15px;
+}
+
+.item-content h4 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.item-content a {
+    color: #ff4800;
+    display: block;
+    float: right;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 3em;
+    }
+    .text-content {
+        padding: 0 60px;
+    }
+    .mat-complementar {
+        padding: 45px 60px;
+    }
+}
+
+
